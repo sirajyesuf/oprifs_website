@@ -18,7 +18,7 @@
                 <div class="card blog rounded border-0 shadow overflow-hidden">
                     <div class="row align-items-center g-0">
                         <div class="col-md-6">
-                            <img src="{{'storage/'.$news->image}}" class="img-fluid" alt="">
+                            <img src="{{voyager::image($news->image)}}" class="img-fluid" alt="">
                             <div class="overlay bg-dark"></div>
                             <div class="author">
                                 <small class="text-light date"><i class="uil uil-calendar-alt"></i>

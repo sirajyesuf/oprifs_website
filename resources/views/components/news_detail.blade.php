@@ -12,7 +12,7 @@
                             <li class="list-inline-item date text-muted"><i class="uil uil-calendar-alt text-dark"></i> {{\Carbon\Carbon::parse($news->created_at)->toDayDateTimeString() }}
                             </li>
                         </ul>
-                        <img src="{{'/storage/'.$news->image}}" class="img-fluid rounded-md shadow" alt="">
+                        <img src="{{voyager::image($news->image)}}" class="img-fluid rounded-md shadow" alt="">
 
                         <h5 class="mt-4">{{$news->title}}</h5>
                         <div x-html="'{{$news->body}}'" class="text-muted">

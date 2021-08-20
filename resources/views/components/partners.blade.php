@@ -14,7 +14,7 @@
         <div class="col-md-3 col-12 mt-4 pt-2">
             <div class="text-center">
                 <div class="rounded p-4 shadow-lg  border-primary border-3">
-                    <a href="javascript:void(0)"><img src="{{'storage/'.$partner->logo}}" height="100" class="mx-auto d-block" alt=""></a>
+                    <a href="javascript:void(0)"><img src="{{voyager::image($partner->logo)}}" height="100" class="mx-auto d-block" alt=""></a>
                 </div>
 
                 <div class="mt-4">

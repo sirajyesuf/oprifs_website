@@ -15,7 +15,7 @@
 
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 pb-5 picture-item" x-data="">
                     <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden">
-                        <img src="{{'/storage/'.$story->image}}" class="img-fluid work-image" alt="">
+                        <img src="{{voyager::image($story->image)}}" class="img-fluid work-image" alt="">
                         <div class="card-body">
                             <div class="content">
                                 <h5 class="mt-3"><a href="page-case-detail.html" class="text-dark title">{{$story->title}}</a></h5>

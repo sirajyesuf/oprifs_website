@@ -1,30 +1,5 @@
 @props(['galleries'])
 
-<!-- <div class="container mt-100 pt-50">
-    <x-myheader></x-myheader>
-
-    <div class="row">
-        @foreach ($galleries as $picture )
-        <div class="col-lg-4 col-md-6 col-12 mt-4  pb-5 picture-item" data-groups='["business"]'>
-            <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden">
-                <img src="{{'storage/'.$picture->image}}" class="img-thumbnail-gallery work-image" alt="" max-width="324px" max-height="167px">
-                <div class="card-body">
-                    <div class="content">
-                        <p class="text-muted">{{$picture->caption}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endforeach
-
-
-    </div>
-    <x-button></x-button>
-
-</div> -->
-
-
-@props(['galleries'])
 <section class="section">
     <div class="container">
 
@@ -42,7 +17,7 @@
             @foreach ($galleries as $picture )
             <div class="col-lg-4 col-md-6 col-12 mt-4  pb-5 picture-item" data-groups='["business"]'>
                 <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden">
-                    <img src="{{'storage/'.$picture->image}}" class="img-thumbnail-gallery work-image" alt="" max-width="324px" max-height="167px">
+                    <img src="{{voyager::image($picture->image)}}" class="img-thumbnail-gallery work-image" alt="" max-width="324px" max-height="167px">
                     <div class="card-body">
                         <div class="content">
                             <p class="text-muted">{{$picture->caption}}</p>
